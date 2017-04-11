@@ -14,7 +14,7 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(sw_pin)) == LOW){ //if pin 8 is connected to GND, pulling it LOW
+  if (digitalRead(sw_pin) == LOW){ //if pin 8 is connected to GND, pulling it LOW
     myservo.write(90);              // set the servo to center position
   }
   else { //pin 8 is not connected to GND, leaving it HIGH
